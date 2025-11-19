@@ -1,0 +1,271 @@
+# Jekyll Blog Post Rules (Chirpy Theme)
+
+## File Naming Convention
+- Blog posts MUST follow the naming pattern: `YYYY-MM-DD-TITLE.md`
+- Place all posts in the `_posts/` directory
+- File extension must be `.md` or `.markdown`
+- Example: `2024-11-19-my-awesome-post.md`
+
+## Front Matter Structure
+
+### Required Fields
+```yaml
+---
+title: Post Title Here
+author: author_id
+date: YYYY-MM-DD HH:MM:SS +/-TTTT
+categories: [Category1, Category2]
+tags: [tag1, tag2, tag3]
+---
+```
+
+### Front Matter Rules
+1. **title**: Clear, descriptive post title
+2. **author**: Author ID (defined in `_data/authors.yml` or config)
+3. **date**: Must include timezone offset (e.g., `+0800` or `-0500`)
+4. **categories**: Array with UP TO 2 elements [TOP_CATEGORY, SUB_CATEGORY]
+5. **tags**: Array with any number of elements, MUST be lowercase
+6. **layout**: NOT needed (defaults to 'post')
+
+### Optional Front Matter Fields
+```yaml
+description: Short summary of the post (used for previews and SEO)
+pin: true                           # Pin to top of home page
+toc: false                          # Disable table of contents
+comments: false                     # Disable comments for this post
+math: true                          # Enable MathJax for equations
+mermaid: true                       # Enable Mermaid diagrams
+render_with_liquid: false           # Disable Liquid processing
+media_subpath: /path/to/media/      # Media resource path prefix
+image:                              # Preview image (1200x630, ratio 1.91:1)
+  path: /path/to/image
+  alt: image alternative text
+  lqip: /path/to/lqip-file          # Low Quality Image Placeholder
+```
+
+## Content Formatting
+
+### Filepath Highlighting
+```markdown
+`/path/to/file.ext`{: .filepath}
+```
+
+### Prompts (Alerts)
+```markdown
+> Tip content here
+{: .prompt-tip }
+
+> Info content here
+{: .prompt-info }
+
+> Warning content here
+{: .prompt-warning }
+
+> Danger content here
+{: .prompt-danger }
+```
+
+### Code Blocks
+
+**With filename:**
+```markdown
+```language
+code here
+```
+{: file="path/to/file" }
+```
+
+**Without line numbers:**
+```markdown
+```language
+code here
+```
+{: .nolineno }
+```
+
+**Languages without line numbers by default:**
+- plaintext, console, terminal
+
+### Images
+
+**Basic with caption:**
+```markdown
+![Image description](/path/to/image)
+_Image Caption_
+```
+
+**With size (recommended):**
+```markdown
+![Image description](/path/to/image){: width="700" height="400" }
+# or shorthand:
+![Image description](/path/to/image){: w="700" h="400" }
+```
+
+**Position classes:**
+- `{: .normal }` - Left aligned
+- `{: .left }` - Float left
+- `{: .right }` - Float right
+- (default) - Centered
+
+**Theme-specific:**
+```markdown
+![Light mode only](/path/to/light.png){: .light }
+![Dark mode only](/path/to/dark.png){: .dark }
+```
+
+**Shadow effect:**
+```markdown
+![Screenshot](/path/to/image){: .shadow }
+```
+
+**LQIP (Low Quality Image Placeholder):**
+```markdown
+![Image](/path/to/image){: lqip="/path/to/lqip-file" }
+```
+
+### Mathematics (MathJax)
+
+**Enable in front matter:**
+```yaml
+math: true
+```
+
+**Block math:**
+```markdown
+$$
+LaTeX_expression
+$$
+```
+
+**Inline math:**
+```markdown
+Text with $$ LaTeX_expression $$ continues.
+```
+
+**In lists (escape first $):**
+```markdown
+1. \$$ LaTeX_expression $$
+```
+
+### Mermaid Diagrams
+
+**Enable in front matter:**
+```yaml
+mermaid: true
+```
+
+**Usage:**
+````markdown
+```mermaid
+graph TD
+  A --> B
+```
+````
+
+### Embedded Media
+
+**YouTube:**
+```liquid
+{% include embed/youtube.html id='VIDEO_ID' %}
+```
+
+**Twitch:**
+```liquid
+{% include embed/twitch.html id='VIDEO_ID' %}
+```
+
+**Bilibili:**
+```liquid
+{% include embed/bilibili.html id='VIDEO_ID' %}
+```
+
+**Spotify:**
+```liquid
+{% include embed/spotify.html id='TRACK_ID' %}
+{% include embed/spotify.html id='TRACK_ID' compact=1 %}
+{% include embed/spotify.html id='TRACK_ID' dark=1 %}
+```
+
+**Video files:**
+```liquid
+{% include embed/video.html src='/path/to/video.mp4' %}
+```
+
+**Audio files:**
+```liquid
+{% include embed/audio.html src='/path/to/audio.mp3' %}
+```
+
+## Best Practices
+
+1. **Always include timezone** in date field
+2. **Keep tags lowercase** for consistency
+3. **Limit categories to 2** (top category + subcategory)
+4. **Add image dimensions** to prevent layout shift
+5. **Use descriptive alt text** for accessibility
+6. **Preview images should be 1200x630px** (1.91:1 ratio)
+7. **Pin important posts** using `pin: true`
+8. **Add descriptions** for better SEO and previews
+9. **Use prompts** to highlight important information
+10. **Enable math/mermaid** only when needed (performance)
+
+## Common Patterns
+
+### Tutorial Post
+```yaml
+---
+title: How to Do Something
+author: author_id
+date: 2024-11-19 14:00:00 +0800
+categories: [Blogging, Tutorial]
+tags: [guide, howto]
+---
+```
+
+### Demo/Example Post
+```yaml
+---
+title: Feature Demo
+author: author_id
+date: 2024-11-19 14:00:00 +0800
+categories: [Blogging, Demo]
+tags: [demo, example]
+pin: true
+image:
+  path: /path/to/preview.png
+  alt: Demo preview
+---
+```
+
+### Technical Post with Math
+```yaml
+---
+title: Algorithm Analysis
+author: author_id
+date: 2024-11-19 14:00:00 +0800
+categories: [Computer Science, Algorithms]
+tags: [algorithms, complexity]
+math: true
+---
+```
+
+## Things to Avoid
+
+1. ❌ Don't use Jekyll `{% highlight %}` tag (not compatible)
+2. ❌ Don't add `layout: post` (it's default)
+3. ❌ Don't use more than 2 categories
+4. ❌ Don't use uppercase in tags
+5. ❌ Don't forget timezone in date
+6. ❌ Don't add captions when using position classes (.left, .right, .normal)
+7. ❌ Don't embed images without dimensions (causes layout shift)
+
+## File Structure
+```
+_posts/
+├── YYYY-MM-DD-title-one.md
+├── YYYY-MM-DD-title-two.md
+└── .placeholder
+```
+
+When creating or editing blog posts, always follow these conventions for consistency with the Chirpy theme.
+

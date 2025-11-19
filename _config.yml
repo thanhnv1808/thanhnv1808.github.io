@@ -14,9 +14,9 @@ timezone:
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-title: Chirpy # the main title
+title: ThanhNV # the main title
 
-tagline: A text-focused Jekyll theme # it will display as the subtitle
+tagline: Just a little corner where I jot down my thoughts and experiments as a developer. # it will display as the subtitle
 
 description: >- # used by seo meta and the atom feed
   A minimal, responsive and feature-rich Jekyll theme for technical writing.
@@ -98,7 +98,7 @@ theme_mode: # [light | dark]
 cdn:
 
 # the avatar on sidebar, support local or CORS resources
-avatar:
+avatar: https://scontent.fhan4-4.fna.fbcdn.net/v/t39.30808-6/475483028_2965634116935627_4996381221749158545_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=a5f93a&_nc_ohc=1PlgPcaRiT4Q7kNvwFbY8-d&_nc_oc=AdnMxJkRmdkQLGf63KF0yyyViEJa7E53w6-YPNnmJUU8mW-ytaNXTELDCKSM8QiRJxA&_nc_zt=23&_nc_ht=scontent.fhan4-4.fna&_nc_gid=mDqH7AiN8iwkRpHV18IuBQ&oh=00_Afg7VC6eB606F01xT4FmJboS9Gv6ofZ71lnkJhNDaGLAMA&oe=6923693E
 
 # The URL of the site-wide social preview image used in SEO `og:image` meta tag.
 # It can be overridden by a customized `page.image` in front matter.
