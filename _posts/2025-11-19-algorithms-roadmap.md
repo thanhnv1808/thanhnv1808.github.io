@@ -9,6 +9,7 @@ image:
   path: /assets/img/20251119/roadmap.png
   alt: Algorithms Learning Roadmap
 pin: true
+comments: true
 ---
 
 Learning algorithms and data structures is a fundamental journey for every software engineer and computer science enthusiast. This roadmap will guide you through a structured path to master these essential concepts.

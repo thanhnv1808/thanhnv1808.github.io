@@ -5,6 +5,7 @@ date: 2025-11-20 09:30:00 +0700
 categories: [Algorithms, LeetCode]
 tags: [leetcode, algorithms, typescript, array, sorting]
 description: Three different approaches to solve LeetCode's Third Maximum Number problem, from O(n log n) to optimal O(n) solutions with TypeScript implementations.
+comments: true
 ---
 
 ## Problem Statement
