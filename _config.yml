@@ -98,7 +98,7 @@ theme_mode: # [light | dark]
 cdn:
 
 # the avatar on sidebar, support local or CORS resources
-avatar: https://scontent.fhan4-4.fna.fbcdn.net/v/t39.30808-6/475483028_2965634116935627_4996381221749158545_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=a5f93a&_nc_ohc=1PlgPcaRiT4Q7kNvwFbY8-d&_nc_oc=AdnMxJkRmdkQLGf63KF0yyyViEJa7E53w6-YPNnmJUU8mW-ytaNXTELDCKSM8QiRJxA&_nc_zt=23&_nc_ht=scontent.fhan4-4.fna&_nc_gid=mDqH7AiN8iwkRpHV18IuBQ&oh=00_Afg7VC6eB606F01xT4FmJboS9Gv6ofZ71lnkJhNDaGLAMA&oe=6923693E
+avatar: /assets/img/avatar-luffy-cute-001.webp
 
 # The URL of the site-wide social preview image used in SEO `og:image` meta tag.
 # It can be overridden by a customized `page.image` in front matter.
