@@ -2,7 +2,7 @@
 title: "LeetCode 414: Third Maximum Number - Multiple Solutions"
 author: thanhnv1808
 date: 2025-11-20 09:30:00 +0700
-categories: [Algorithms, LeetCode]
+categories: [Algorithms, LeetCode, Array]
 tags: [leetcode, algorithms, typescript, array, sorting]
 description: Three different approaches to solve LeetCode's Third Maximum Number problem, from O(n log n) to optimal O(n) solutions with TypeScript implementations.
 comments: true
