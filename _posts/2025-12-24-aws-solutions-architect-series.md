@@ -28,7 +28,7 @@ The series is divided into 19 lessons, covering everything from AWS fundamentals
 ### Foundation & Core Services
 
 - ✅ **[Lesson 01: Overview](/posts/aws-sa-overview/)** - AWS Introduction, Cloud Computing, Global Infrastructure
-- 📌 **Lesson 02: IAM Service & Organization Service** - Identity and Access Management, AWS Organizations
+- ✅ **[Lesson 02: IAM Service & Organization Service](/posts/aws-sa-lesson-02-iam-organization/)** - Identity and Access Management, AWS Organizations
 - 📌 **Lesson 03-04: Billing Service & EC2 Service** - Cost Management, Elastic Compute Cloud
 - 📌 **Lesson 05: EFS Service & S3 Service** - Elastic File System, Simple Storage Service
 - 📌 **Lesson 06: FSx Service, Storage Gateway Service & Snow Family Service** - File Systems, Hybrid Storage
@@ -112,7 +112,7 @@ This series aligns with **AWS Certified Solutions Architect** exam objectives:
 
 ## 🔄 Progress Tracking
 
-- ✅ **Completed**: Lesson 01
+- ✅ **Completed**: Lesson 01, Lesson 02
 - 📌 **In Progress**: Coming soon...
 - 📋 **Planned**: Lessons 02-19
 

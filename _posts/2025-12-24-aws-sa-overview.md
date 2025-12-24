@@ -155,11 +155,11 @@ AWS offers various certifications to validate knowledge and skills:
 #### Creating Personal Account
 
 **Signup:**
-1. Go to [http://console.aws.amazon.com](http://console.aws.amazon.com)
+1. Go to [https://console.aws.amazon.com](https://console.aws.amazon.com)
 2. Create an account following the instructions
 
 **Sign in:**
-- Log in at [http://console.aws.amazon.com](http://console.aws.amazon.com)
+- Log in at [https://console.aws.amazon.com](https://console.aws.amazon.com)
 
 **Setup MFA (Multi-Factor Authentication):**
 - Enable MFA to enhance account security
@@ -246,13 +246,13 @@ View details at: [AWS Infrastructure](https://infrastructure.aws)
 
 **Question 1:** Create an AWS account
 
-- Visit: [http://console.aws.amazon.com/](http://console.aws.amazon.com/)
+- Visit: [https://console.aws.amazon.com/](https://console.aws.amazon.com/)
 
 ### Exercise 2: Login to AWS Console
 
 **Question 1:** Use the account created above or use the account provided by the academy and log in to AWS console
 
-- Visit: [http://console.aws.amazon.com/](http://console.aws.amazon.com/)
+- Visit: [https://console.aws.amazon.com/](https://console.aws.amazon.com/)
 - Log in with the created account or the provided account
 
 ---
@@ -263,7 +263,7 @@ View details at: [AWS Infrastructure](https://infrastructure.aws)
 
 #### Step 1: Access Registration Page
 
-1. Open your browser and visit: [http://console.aws.amazon.com/](http://console.aws.amazon.com/)
+1. Open your browser and visit: [https://console.aws.amazon.com/](https://console.aws.amazon.com/)
 2. Click the **"Create an AWS Account"** or **"Sign up"** button
 
 #### Step 2: Enter Account Information
@@ -314,7 +314,7 @@ View details at: [AWS Infrastructure](https://infrastructure.aws)
 
 #### Step 1: Access AWS Console
 
-1. Open your browser and visit: [http://console.aws.amazon.com/](http://console.aws.amazon.com/)
+1. Open your browser and visit: [https://console.aws.amazon.com/](https://console.aws.amazon.com/)
 
 #### Step 2: Login
 
@@ -387,7 +387,7 @@ The next lesson will dive deeper into **IAM Service and Organization Service**.
 
 **Lessons in this series:**
 - ✅ [Lesson 01: Overview](/posts/aws-sa-overview/) (This lesson)
-- 📌 Lesson 02: IAM Service & Organization Service
+- ✅ [Lesson 02: IAM Service & Organization Service](/posts/aws-sa-lesson-02-iam-organization/)
 - 📌 Lesson 03-04: Billing Service & EC2 Service
 - 📌 Lesson 05: EFS Service & S3 Service
 - ... and many more lessons
