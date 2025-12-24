@@ -1087,7 +1087,7 @@ In this lesson, we covered:
 
 ---
 
-**Next Lesson**: [Lesson 03-04: Billing Service & EC2 Service](/posts/aws-sa-lesson-03-04-billing-ec2/)
+**Next Lesson**: [Lesson 03-04: Billing Service & EC2 Service]
 
 ---
 
